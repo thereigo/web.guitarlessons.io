@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <!-- <script src="./index.js" defer></script> -->
+  </head>
+  <body class="bg-light">
+    <!-- NAV -->  
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 p-4 fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Guitar Lessons</a>
+        <!-- NAV toggler button-->  
+        <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAV items-->  
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto px-3">
+            <li class="nav-item">
+              <a href="index.html#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#instructors" class="nav-link">Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-danger" type="submit" id="loginBtn" onclick="login()">
+            <i class="bi bi-person-circle"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Pricing -->
+    <section id="pricing" class="p-5 bg-light">
+        <div class="container">
+          <h1 class="text-center pb-4">Pricing</h1>
+          
+          <div class="row g-5">
+            <!-- Card 1 -->
+            <div class="col-md-4 text-center" id="pricing-card">
+              <div class="card pricing-card">
+                <div class="card-header text-bg-dark">
+                  <h2>Acoustic</h2>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><span class="text-danger">$10 USD</span>/month</h3>
+                  <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore sint rerum!</p>
+                  <ul class="card-list text-start px-3">
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsumsit.</li>
+                  </ul>
+                  <a href="#" onclick="purchase()" class="btn btn-danger">Purchase</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 text-center" id="pricing-card">
+              <div class="card pricing-card">
+                <div class="card-header text-bg-dark ">
+                  <h2>Electric</h2>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><span class="text-danger">$15 USD</span>/month</h3>
+                  <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore sint rerum!</p>
+                  <ul class="card-list text-start px-3">
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsumsit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum.</li>
+                  </ul>
+                  <a href="#" onclick="purchase()" class="btn btn-danger">Purchase</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 text-center" id="pricing-card">
+              <div class="card pricing-card">
+                <div class="card-header text-bg-dark">
+                  <h2>Bass</h2>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><span class="text-danger">$13 USD</span>/month</h3>
+                  <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore sint rerum!</p>
+                  <ul class="card-list text-start px-3">
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem dolor sit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsumsit.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem, ipsum dolor.</li>
+                    <li class="card-list-item"><i class="bi bi-check2 pe-2"></i>Lorem ipsum dolor sit.</li>
+                  </ul>
+                  <a href="#" onclick="purchase()" class="btn btn-danger">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 mt-4 text-bg-dark text-center position-relative">
+      <div class="container">
+        <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+        <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+        <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+        <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+        <p class="lead">&copy; 2024 Guitar Lessons</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+      function purchase() {
+        alert("Thank you for purchase");
+      }
+          
+      // Login
+      function login() {
+        alert('Welcome on Board');
+      };
+    </script>
+  </body>
+</html>

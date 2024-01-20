@@ -1,0 +1,184 @@
+/* ------------------------------------------------ RULESET ------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+/* ------------------------------------------------- HTML ------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+/* ------------------------------------------------- BODY ------------------------------------------------- */
+
+body {
+    min-width: 320px; 
+}
+@media (min-width: 576px) {
+    body {
+        min-width: 576px; 
+    }
+}
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+/* ------------------------------------------------- NAV ------------------------------------------------- */
+.nav-link {
+    color: rgba(255,255,255,0.90);
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #dc3545;
+}
+
+/* ------------------------------------------------- HERO ------------------------------------------------- */
+
+#hero-section {
+    background-image: url(./images/concert.jpg);
+    background-size: cover;    
+    background-position: center;
+    background-blend-mode:darken;
+}
+
+
+@media (max-width: 768px) {
+    .hero-text {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(min-width: 768px) {
+    .subscribe-input {
+        width: 50%;
+    }
+}
+
+/* ------------------------------------------------- Carousel ------------------------------------------------- */
+
+.carousel-item {
+    height: 40rem;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-image {
+    max-height: 40rem;
+    background-color: #dc3545;
+    border-radius: 100px;
+   
+}
+@media(max-width: 768px) {
+    .carousel-image {
+        border-radius: 0;
+    }
+    .quote {
+        min-width: 16rem;
+    }
+}
+
+.quote {
+    border-radius: 20px;
+    border: black solid 1px;
+    max-width: 35rem;
+}
+
+/* ------------------------------------------------- Cards ------------------------------------------------- */
+
+#learn-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 20rem;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+.card-path {
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.card-path:hover {
+    transform: translateY(-15px);
+}
+
+#instructors-card {
+    border-radius: 20px;
+}
+#instructors-card:hover {
+    color: #dc3545;
+}
+
+/* ------------------------------------------------ Pricing ------------------------------------------------ */
+
+.card-list {
+    list-style:none;
+}
+
+.card-list-item {
+    font-size: 1.125rem;
+}
+
+.pricing-card, .card-header  {
+    border-radius: 2rem !important;
+}
+
+.pricing-card p {
+    font-size: 1.125rem;
+}
+
+.card-header:hover {
+    color:#dc3545;
+}
+
+/* ------------------------------------------------ Contact ------------------------------------------------ */
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* ------------------------------------------------ About ------------------------------------------------ */
+
+#about-hero {
+    height: fit-content;
+}
+
+#main-section {
+    height: 30rem;
+    background-image: url(./images/back3.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    
+}
+
+/* main h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+} */
+
+/* ------------------------------------------------ End ------------------------------------------------ */
