@@ -83,10 +83,14 @@ body::before {
 @media(max-width: 768px) {
     .carousel-image {
         border-radius: 0;
+        width: 100%;
+        margin: auto;
     }
-    .quote {
-        min-width: 16rem;
-    }
+    
+    /* .quote {
+        min-width: 12rem;
+        max-width: 16rem;
+    } */
 }
 
 .quote {
