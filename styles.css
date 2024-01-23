@@ -101,7 +101,7 @@ body::before {
 
 /* ------------------------------------------------- Cards ------------------------------------------------- */
 
-#learn-card {
+.learn-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,10 +121,10 @@ body::before {
     transform: translateY(-15px);
 }
 
-#instructors-card {
+.instructors-card {
     border-radius: 20px;
 }
-#instructors-card:hover {
+.instructors-card:hover {
     color: #dc3545;
 }
 
