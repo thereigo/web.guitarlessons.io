@@ -168,7 +168,7 @@ body::before {
 /* ------------------------------------------------ About ------------------------------------------------ */
 
 #about-hero {
-    height: fit-content;
+    min-height: 40vh;
 }
 
 #main-section {
@@ -178,6 +178,12 @@ body::before {
     background-position: center;
     opacity: 0.7;
     
+}
+
+/* ------------------------------------------------ Footer ------------------------------------------------ */
+
+#pricing, #contact{
+    min-height: 100svh;
 }
 
 /* main h1 {
